@@ -45,6 +45,10 @@ The site will be available at <http://localhost:5000/>.
 ```bash
 pytest
 ```
+or 
+```bash
+python -m pytest
+```
 
 ## Project structure
 
