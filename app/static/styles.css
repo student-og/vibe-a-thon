@@ -200,3 +200,212 @@ body {
   clip: rect(0, 0, 0, 0);
   border: 0;
 }
+
+/* Healthcare Disclaimer Styles */
+.healthcare-disclaimer {
+  background: #fff3cd;
+  border: 2px solid #ffc107;
+  border-radius: 8px;
+  margin: 2rem 0;
+  padding: 1.5rem;
+}
+
+.disclaimer-content h3 {
+  margin: 0 0 1rem;
+  color: #856404;
+}
+
+.disclaimer-content p {
+  margin: 0;
+  color: #856404;
+}
+
+/* Advanced Search Options */
+.advanced-options {
+  margin-top: 1rem;
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+}
+
+.advanced-options select {
+  padding: 0.5rem;
+  border: 1px solid var(--border);
+  border-radius: 6px;
+  background: var(--surface);
+}
+
+/* Education Section */
+.education {
+  margin: 3rem 0;
+  padding: 2rem;
+  background: var(--surface);
+  border-radius: 12px;
+  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.1);
+}
+
+.education h2 {
+  text-align: center;
+  margin-bottom: 2rem;
+  color: var(--primary);
+}
+
+.education-grid {
+  display: grid;
+  gap: 1.5rem;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+}
+
+.education-card {
+  background: #f8f9fa;
+  padding: 1.5rem;
+  border-radius: 8px;
+  border: 1px solid var(--border);
+}
+
+.education-card h3 {
+  margin: 0 0 1rem;
+  color: var(--primary);
+}
+
+.education-card p {
+  margin-bottom: 1rem;
+  color: var(--text-muted);
+}
+
+.btn-secondary {
+  background: var(--accent);
+  color: white;
+  border: none;
+  padding: 0.75rem 1.5rem;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: 500;
+  transition: background-color 0.2s;
+}
+
+.btn-secondary:hover {
+  background: #e09a35;
+}
+
+/* Modal Styles */
+.modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  z-index: 1000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.modal-content {
+  background: var(--surface);
+  padding: 2rem;
+  border-radius: 12px;
+  max-width: 600px;
+  width: 90%;
+  max-height: 80vh;
+  overflow-y: auto;
+  position: relative;
+}
+
+.close {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  font-size: 1.5rem;
+  cursor: pointer;
+  color: var(--text-muted);
+}
+
+.close:hover {
+  color: var(--text);
+}
+
+/* Savings Calculator */
+.form-group {
+  margin-bottom: 1rem;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 0.5rem;
+  font-weight: 500;
+}
+
+.form-group input {
+  width: 100%;
+  padding: 0.75rem;
+  border: 1px solid var(--border);
+  border-radius: 6px;
+  font-size: 1rem;
+}
+
+.savings-display {
+  background: #d4edda;
+  padding: 1.5rem;
+  border-radius: 8px;
+  border: 1px solid #c3e6cb;
+  margin-top: 1rem;
+}
+
+.savings-amount {
+  font-size: 2rem;
+  font-weight: bold;
+  color: #155724;
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+.savings-details p {
+  margin: 0.5rem 0;
+  color: #155724;
+}
+
+/* Pharmacy Finder Results */
+.pharmacy-results {
+  margin-top: 2rem;
+  padding: 1.5rem;
+  background: var(--surface);
+  border-radius: 8px;
+  border: 1px solid var(--border);
+}
+
+.pharmacy-card {
+  padding: 1rem;
+  border: 1px solid var(--border);
+  border-radius: 6px;
+  margin-bottom: 1rem;
+  background: #f8f9fa;
+}
+
+.pharmacy-card h4 {
+  margin: 0 0 0.5rem;
+  color: var(--primary);
+}
+
+.pharmacy-card .distance {
+  color: var(--text-muted);
+  font-size: 0.9rem;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .advanced-options {
+    flex-direction: column;
+    align-items: stretch;
+  }
+  
+  .education-grid {
+    grid-template-columns: 1fr;
+  }
+  
+  .modal-content {
+    margin: 1rem;
+    width: calc(100% - 2rem);
+  }
+}
