@@ -1,0 +1,216 @@
+[
+  {
+    "brand_name": "Tylenol",
+    "generic_name": "Acetaminophen",
+    "indications": ["Pain relief", "Fever reduction"],
+    "form": "Tablet",
+    "strength": "500 mg",
+    "average_brand_price": 6.49,
+    "average_generic_price": 3.29,
+    "notes": "Generic acetaminophen provides the same active ingredient as Tylenol.",
+    "sources": [
+      {
+        "name": "FDA Orange Book",
+        "url": "https://www.accessdata.fda.gov/scripts/cder/ob/index.cfm"
+      }
+    ]
+  },
+  {
+    "brand_name": "Advil",
+    "generic_name": "Ibuprofen",
+    "indications": ["Pain relief", "Inflammation", "Fever"],
+    "form": "Tablet",
+    "strength": "200 mg",
+    "average_brand_price": 7.99,
+    "average_generic_price": 3.99,
+    "notes": "Ibuprofen is widely available in generic form and offers significant savings.",
+    "sources": [
+      {
+        "name": "WHO Essential Medicines",
+        "url": "https://list.essentialmeds.org/"
+      }
+    ]
+  },
+  {
+    "brand_name": "Lipitor",
+    "generic_name": "Atorvastatin",
+    "indications": ["Cholesterol management"],
+    "form": "Tablet",
+    "strength": "20 mg",
+    "average_brand_price": 190.0,
+    "average_generic_price": 12.5,
+    "notes": "Generic atorvastatin offers the same statin therapy at a fraction of the cost.",
+    "sources": [
+      {
+        "name": "CDC Generic Drugs Fact Sheet",
+        "url": "https://www.cdc.gov/"
+      }
+    ]
+  },
+  {
+    "brand_name": "Nexium",
+    "generic_name": "Esomeprazole",
+    "indications": ["Acid reflux", "GERD"],
+    "form": "Capsule",
+    "strength": "20 mg",
+    "average_brand_price": 25.49,
+    "average_generic_price": 9.75,
+    "notes": "Proton pump inhibitors like esomeprazole are equally effective in generic form.",
+    "sources": [
+      {
+        "name": "Mayo Clinic",
+        "url": "https://www.mayoclinic.org/"
+      }
+    ]
+  },
+  {
+    "brand_name": "Glucophage",
+    "generic_name": "Metformin",
+    "indications": ["Type 2 diabetes"],
+    "form": "Tablet",
+    "strength": "500 mg",
+    "average_brand_price": 15.99,
+    "average_generic_price": 4.25,
+    "notes": "Metformin is a first-line therapy for type 2 diabetes with affordable generic options.",
+    "sources": [
+      {
+        "name": "American Diabetes Association",
+        "url": "https://diabetes.org/"
+      }
+    ]
+  },
+  {
+    "brand_name": "Zoloft",
+    "generic_name": "Sertraline",
+    "indications": ["Depression", "Anxiety"],
+    "form": "Tablet",
+    "strength": "50 mg",
+    "average_brand_price": 24.99,
+    "average_generic_price": 6.49,
+    "notes": "Generic sertraline provides equivalent SSRI therapy at lower price points.",
+    "sources": [
+      {
+        "name": "National Library of Medicine",
+        "url": "https://pubmed.ncbi.nlm.nih.gov/"
+      }
+    ]
+  }
+  ,
+  {
+    "brand_name": "Crocin",
+    "generic_name": "Paracetamol",
+    "indications": ["Pain relief", "Fever reduction"],
+    "form": "Tablet",
+    "strength": "500 mg",
+    "average_brand_price": 1.49,
+    "average_generic_price": 0.69,
+    "notes": "Widely used analgesic/antipyretic in India; same active ingredient as acetaminophen.",
+    "sources": [
+      { "name": "Indian Pharmacopoeia (general)", "url": "https://ipc.gov.in/" }
+    ]
+  },
+  {
+    "brand_name": "Calpol",
+    "generic_name": "Paracetamol",
+    "indications": ["Pain relief", "Fever reduction"],
+    "form": "Tablet",
+    "strength": "500 mg",
+    "average_brand_price": 1.39,
+    "average_generic_price": 0.69,
+    "notes": "Paracetamol generic equivalents offer comparable efficacy and safety when used as directed.",
+    "sources": [
+      { "name": "NICE Medicines Information", "url": "https://bnf.nice.org.uk/" }
+    ]
+  },
+  {
+    "brand_name": "Dolo 650",
+    "generic_name": "Paracetamol",
+    "indications": ["Pain relief", "Fever reduction"],
+    "form": "Tablet",
+    "strength": "650 mg",
+    "average_brand_price": 1.69,
+    "average_generic_price": 0.79,
+    "notes": "Higher-strength paracetamol commonly used in India.",
+    "sources": [
+      { "name": "WHO Essential Medicines", "url": "https://list.essentialmeds.org/" }
+    ]
+  },
+  {
+    "brand_name": "Combiflam",
+    "generic_name": "Ibuprofen + Paracetamol",
+    "indications": ["Pain relief", "Inflammation", "Fever"],
+    "form": "Tablet",
+    "strength": "400 mg + 325 mg",
+    "average_brand_price": 2.99,
+    "average_generic_price": 1.49,
+    "notes": "Combination analgesic; consider single-ingredient generics for targeted therapy.",
+    "sources": [
+      { "name": "Medsafe Combination Analgesics Guidance", "url": "https://www.medsafe.govt.nz/" }
+    ]
+  },
+  {
+    "brand_name": "Augmentin",
+    "generic_name": "Amoxicillin + Clavulanate",
+    "indications": ["Bacterial infections"],
+    "form": "Tablet",
+    "strength": "625 mg",
+    "average_brand_price": 12.99,
+    "average_generic_price": 6.49,
+    "notes": "Broad-spectrum penicillin with beta-lactamase inhibitor; generics are widely available in India.",
+    "sources": [
+      { "name": "FDA Orange Book", "url": "https://www.accessdata.fda.gov/scripts/cder/ob/index.cfm" }
+    ]
+  },
+  {
+    "brand_name": "Pantocid",
+    "generic_name": "Pantoprazole",
+    "indications": ["Acid reflux", "GERD"],
+    "form": "Tablet",
+    "strength": "40 mg",
+    "average_brand_price": 3.49,
+    "average_generic_price": 1.29,
+    "notes": "Proton pump inhibitor commonly prescribed in India; generics offer savings.",
+    "sources": [
+      { "name": "Mayo Clinic", "url": "https://www.mayoclinic.org/" }
+    ]
+  },
+  {
+    "brand_name": "Atorva",
+    "generic_name": "Atorvastatin",
+    "indications": ["Cholesterol management"],
+    "form": "Tablet",
+    "strength": "10 mg",
+    "average_brand_price": 4.99,
+    "average_generic_price": 1.25,
+    "notes": "Statin therapy in India frequently filled with generic atorvastatin.",
+    "sources": [
+      { "name": "Indian Heart Journal (general references)", "url": "https://www.journals.elsevier.com/indian-heart-journal" }
+    ]
+  },
+  {
+    "brand_name": "Allegra",
+    "generic_name": "Fexofenadine",
+    "indications": ["Allergic rhinitis"],
+    "form": "Tablet",
+    "strength": "120 mg",
+    "average_brand_price": 6.99,
+    "average_generic_price": 2.25,
+    "notes": "Non-drowsy antihistamine; multiple Indian manufacturers supply generics.",
+    "sources": [
+      { "name": "National Library of Medicine", "url": "https://pubmed.ncbi.nlm.nih.gov/" }
+    ]
+  },
+  {
+    "brand_name": "Shelcal",
+    "generic_name": "Calcium Carbonate + Vitamin D3",
+    "indications": ["Calcium deficiency", "Bone health"],
+    "form": "Tablet",
+    "strength": "500 mg + 250 IU",
+    "average_brand_price": 3.25,
+    "average_generic_price": 1.35,
+    "notes": "Supplement frequently prescribed in India; generics provide comparable supplementation.",
+    "sources": [
+      { "name": "NICE Medicines Information", "url": "https://bnf.nice.org.uk/" }
+    ]
+  }
+]
