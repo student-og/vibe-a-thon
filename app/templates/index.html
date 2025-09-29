@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Generic vs. Branded Medicine Finder</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}" />
+  </head>
+  <body>
+    <header class="hero">
+      <div class="hero__content">
+        <h1>Generic vs. Branded Medicine Finder</h1>
+        <p>
+          Discover affordable generic alternatives and understand how much you can save
+          without compromising on efficacy.
+        </p>
+      </div>
+    </header>
+
+    <main class="main">
+      <section class="stats" aria-label="Dataset overview">
+        <div class="stat-card">
+          <h2>{{ stats.total_medicines }}</h2>
+          <p>Medicines tracked</p>
+        </div>
+        {% if stats.average_savings is defined %}
+        <div class="stat-card">
+          <h2>${{ '%.2f' | format(stats.average_savings) }}</h2>
+          <p>Average savings per prescription</p>
+        </div>
+        <div class="stat-card">
+          <h2>${{ '%.2f' | format(stats.average_brand_price) }}</h2>
+          <p>Avg. branded price</p>
+        </div>
+        <div class="stat-card">
+          <h2>${{ '%.2f' | format(stats.average_generic_price) }}</h2>
+          <p>Avg. generic price</p>
+        </div>
+        {% endif %}
+      </section>
+
+      <section class="search" aria-label="Medicine search">
+        <form id="search-form">
+          <label for="search-input">Search by branded or generic name</label>
+          <div class="search__controls">
+            <input
+              id="search-input"
+              name="q"
+              type="search"
+              placeholder="e.g., Tylenol, Lipitor, Metformin"
+              minlength="2"
+              required
+            />
+            <button type="submit">Find Alternatives</button>
+          </div>
+        </form>
+        <p id="search-feedback" class="visually-hidden" role="status"></p>
+      </section>
+
+      <section id="results" class="results" aria-live="polite"></section>
+    </main>
+
+    <footer class="footer">
+      <p>
+        Data sourced from public drug registries and health organizations. Always consult your
+        healthcare provider before making medication changes.
+      </p>
+    </footer>
+
+    <script src="{{ url_for('static', filename='app.js') }}" defer></script>
+  </body>
+</html>

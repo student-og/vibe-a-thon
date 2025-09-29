@@ -1,0 +1,98 @@
+[
+  {
+    "brand_name": "Tylenol",
+    "generic_name": "Acetaminophen",
+    "indications": ["Pain relief", "Fever reduction"],
+    "form": "Tablet",
+    "strength": "500 mg",
+    "average_brand_price": 6.49,
+    "average_generic_price": 3.29,
+    "notes": "Generic acetaminophen provides the same active ingredient as Tylenol.",
+    "sources": [
+      {
+        "name": "FDA Orange Book",
+        "url": "https://www.accessdata.fda.gov/scripts/cder/ob/index.cfm"
+      }
+    ]
+  },
+  {
+    "brand_name": "Advil",
+    "generic_name": "Ibuprofen",
+    "indications": ["Pain relief", "Inflammation", "Fever"],
+    "form": "Tablet",
+    "strength": "200 mg",
+    "average_brand_price": 7.99,
+    "average_generic_price": 3.99,
+    "notes": "Ibuprofen is widely available in generic form and offers significant savings.",
+    "sources": [
+      {
+        "name": "WHO Essential Medicines",
+        "url": "https://list.essentialmeds.org/"
+      }
+    ]
+  },
+  {
+    "brand_name": "Lipitor",
+    "generic_name": "Atorvastatin",
+    "indications": ["Cholesterol management"],
+    "form": "Tablet",
+    "strength": "20 mg",
+    "average_brand_price": 190.0,
+    "average_generic_price": 12.5,
+    "notes": "Generic atorvastatin offers the same statin therapy at a fraction of the cost.",
+    "sources": [
+      {
+        "name": "CDC Generic Drugs Fact Sheet",
+        "url": "https://www.cdc.gov/"
+      }
+    ]
+  },
+  {
+    "brand_name": "Nexium",
+    "generic_name": "Esomeprazole",
+    "indications": ["Acid reflux", "GERD"],
+    "form": "Capsule",
+    "strength": "20 mg",
+    "average_brand_price": 25.49,
+    "average_generic_price": 9.75,
+    "notes": "Proton pump inhibitors like esomeprazole are equally effective in generic form.",
+    "sources": [
+      {
+        "name": "Mayo Clinic",
+        "url": "https://www.mayoclinic.org/"
+      }
+    ]
+  },
+  {
+    "brand_name": "Glucophage",
+    "generic_name": "Metformin",
+    "indications": ["Type 2 diabetes"],
+    "form": "Tablet",
+    "strength": "500 mg",
+    "average_brand_price": 15.99,
+    "average_generic_price": 4.25,
+    "notes": "Metformin is a first-line therapy for type 2 diabetes with affordable generic options.",
+    "sources": [
+      {
+        "name": "American Diabetes Association",
+        "url": "https://diabetes.org/"
+      }
+    ]
+  },
+  {
+    "brand_name": "Zoloft",
+    "generic_name": "Sertraline",
+    "indications": ["Depression", "Anxiety"],
+    "form": "Tablet",
+    "strength": "50 mg",
+    "average_brand_price": 24.99,
+    "average_generic_price": 6.49,
+    "notes": "Generic sertraline provides equivalent SSRI therapy at lower price points.",
+    "sources": [
+      {
+        "name": "National Library of Medicine",
+        "url": "https://pubmed.ncbi.nlm.nih.gov/"
+      }
+    ]
+  }
+]
