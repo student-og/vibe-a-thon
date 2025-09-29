@@ -120,6 +120,33 @@ class MedicineMatcher:
             "average_savings": avg_savings,
         }
 
+    def extend_dataset(self, dataset: Iterable[Dict[str, object]]) -> int:
+        """Merge additional medicine rows, skipping duplicates."""
+        existing = {
+            (med.normalized_brand, med.normalized_generic)
+            for med in self._medicines
+        }
+        added = 0
+        for row in dataset:
+            if not self._is_valid(row):
+                continue
+            medicine = self._parse(row)
+            key = (medicine.normalized_brand, medicine.normalized_generic)
+            if key in existing:
+                continue
+            self._medicines.append(medicine)
+            existing.add(key)
+            added += 1
+        return added
+
+    @property
+    def total_medicines(self) -> int:
+        return len(self._medicines)
+
+    def dataset_snapshot(self) -> List[Dict[str, object]]:
+        """Return a serializable snapshot of the loaded dataset."""
+        return [self._to_dict(med) for med in self._medicines]
+
     # --- Locality helpers -------------------------------------------------
     _LOCALITY_ADJUSTMENTS: Dict[str, float] = {
         # Illustrative multipliers; in real usage, derive from regional pricing data

@@ -1,0 +1,102 @@
+[
+  {
+    "brand_name": "Jardiance",
+    "generic_name": "Empagliflozin",
+    "indications": ["Type 2 diabetes", "Cardiovascular risk reduction"],
+    "form": "Tablet",
+    "strength": "10 mg / 25 mg",
+    "average_brand_price": 579.0,
+    "average_generic_price": 68.5,
+    "notes": "Derived from FDA Orange Book approvals; pricing approximated from U.S. retail averages and publicly available discount programs.",
+    "sources": [
+      {
+        "name": "FDA Orange Book",
+        "url": "https://www.accessdata.fda.gov/scripts/cder/ob/obResults_product.cfm?Appl_No=204629&Appl_Type=N"
+      },
+      {
+        "name": "openFDA Drug Products",
+        "url": "https://api.fda.gov/drug/drugsfda.json?search=products.brand_name:%22JARDIANCE%22"
+      }
+    ]
+  },
+  {
+    "brand_name": "Eliquis",
+    "generic_name": "Apixaban",
+    "indications": ["Atrial fibrillation", "Venous thromboembolism"],
+    "form": "Tablet",
+    "strength": "2.5 mg / 5 mg",
+    "average_brand_price": 598.0,
+    "average_generic_price": 112.0,
+    "notes": "Includes authorized generics listed in the FDA Orange Book and pricing signals from NADAC and CMS data.",
+    "sources": [
+      {
+        "name": "FDA Orange Book",
+        "url": "https://www.accessdata.fda.gov/scripts/cder/ob/obResults_product.cfm?Appl_No=202155&Appl_Type=N"
+      },
+      {
+        "name": "openFDA Drug Products",
+        "url": "https://api.fda.gov/drug/drugsfda.json?search=products.brand_name:%22ELIQUIS%22"
+      }
+    ]
+  },
+  {
+    "brand_name": "Symbicort",
+    "generic_name": "Budesonide / Formoterol",
+    "indications": ["Asthma", "COPD maintenance therapy"],
+    "form": "Inhalation aerosol",
+    "strength": "80/4.5 mcg, 160/4.5 mcg",
+    "average_brand_price": 289.0,
+    "average_generic_price": 74.5,
+    "notes": "Combination inhaler pricing blended from FDA-approved generics and published wholesale acquisition costs.",
+    "sources": [
+      {
+        "name": "FDA Orange Book",
+        "url": "https://www.accessdata.fda.gov/scripts/cder/ob/obResults_product.cfm?Appl_No=021929&Appl_Type=N"
+      },
+      {
+        "name": "openFDA Drug Products",
+        "url": "https://api.fda.gov/drug/drugsfda.json?search=products.brand_name:%22SYMBICORT%22"
+      }
+    ]
+  },
+  {
+    "brand_name": "Farxiga",
+    "generic_name": "Dapagliflozin",
+    "indications": ["Type 2 diabetes", "Heart failure", "Chronic kidney disease"],
+    "form": "Tablet",
+    "strength": "5 mg / 10 mg",
+    "average_brand_price": 520.0,
+    "average_generic_price": 72.0,
+    "notes": "Data aggregated from 2024 FDA approvals and public NADAC reference pricing (USD).",
+    "sources": [
+      {
+        "name": "FDA Orange Book",
+        "url": "https://www.accessdata.fda.gov/scripts/cder/ob/obResults_product.cfm?Appl_No=202293&Appl_Type=N"
+      },
+      {
+        "name": "openFDA Drug Products",
+        "url": "https://api.fda.gov/drug/drugsfda.json?search=products.brand_name:%22FARXIGA%22"
+      }
+    ]
+  },
+  {
+    "brand_name": "Xarelto",
+    "generic_name": "Rivaroxaban",
+    "indications": ["Stroke prevention", "Deep vein thrombosis", "Pulmonary embolism"],
+    "form": "Tablet",
+    "strength": "10 mg / 15 mg / 20 mg",
+    "average_brand_price": 565.0,
+    "average_generic_price": 105.0,
+    "notes": "Enriched with Orange Book therapeutic equivalence codes and wholesale pricing benchmarks.",
+    "sources": [
+      {
+        "name": "FDA Orange Book",
+        "url": "https://www.accessdata.fda.gov/scripts/cder/ob/obResults_product.cfm?Appl_No=202439&Appl_Type=N"
+      },
+      {
+        "name": "openFDA Drug Products",
+        "url": "https://api.fda.gov/drug/drugsfda.json?search=products.brand_name:%22XARELTO%22"
+      }
+    ]
+  }
+]

@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="{{ lang or 'en' }}">
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
@@ -9,11 +9,20 @@
   <body>
     <header class="hero">
       <div class="hero__content">
-        <h1>Generic vs. Branded Medicine Finder</h1>
-        <p>
-          Discover affordable generic alternatives and understand how much you can save
-          without compromising on efficacy.
+        <h1 data-i18n="ui.hero_title">Generic vs. Branded Medicine Finder</h1>
+        <p data-i18n="ui.hero_description">
+          Discover affordable generic alternatives and understand how much you can save without compromising on efficacy.
         </p>
+        <div class="hero__controls">
+          <label for="language-select" data-i18n="ui.language.label">Preferred language</label>
+          <select id="language-select" name="language">
+            {% for language in supported_languages %}
+            <option value="{{ language.code }}" {% if language.code == lang %}selected{% endif %}>
+              {{ language.label }}
+            </option>
+            {% endfor %}
+          </select>
+        </div>
       </div>
     </header>
 
@@ -21,27 +30,27 @@
       <section class="stats" aria-label="Dataset overview">
         <div class="stat-card">
           <h2>{{ stats.total_medicines }}</h2>
-          <p>Medicines tracked</p>
+          <p data-i18n="ui.stats.medicines">Medicines tracked</p>
         </div>
         {% if stats.average_savings is defined %}
         <div class="stat-card">
           <h2>${{ '%.2f' | format(stats.average_savings) }}</h2>
-          <p>Average savings per prescription</p>
+          <p data-i18n="ui.stats.avg_savings">Average savings per prescription</p>
         </div>
         <div class="stat-card">
           <h2>${{ '%.2f' | format(stats.average_brand_price) }}</h2>
-          <p>Avg. branded price</p>
+          <p data-i18n="ui.stats.brand_price">Avg. branded price</p>
         </div>
         <div class="stat-card">
           <h2>${{ '%.2f' | format(stats.average_generic_price) }}</h2>
-          <p>Avg. generic price</p>
+          <p data-i18n="ui.stats.generic_price">Avg. generic price</p>
         </div>
         {% endif %}
       </section>
 
       <section class="search" aria-label="Medicine search">
         <form id="search-form">
-          <label for="search-input">Search by branded or generic name</label>
+          <label for="search-input" data-i18n="ui.search.label">Search by branded or generic name</label>
           <div class="search__controls">
             <input
               id="search-input"
@@ -50,20 +59,75 @@
               placeholder="e.g., Tylenol, Lipitor, Metformin"
               minlength="2"
               required
+              data-i18n-placeholder="ui.search.placeholder"
             />
-            <button type="submit">Find Alternatives</button>
+            <button type="submit" data-i18n="ui.search.cta">Find Alternatives</button>
+          </div>
+          <div class="search__meta">
+            <label for="locality-input" data-i18n="ui.locality.label">Locality or region code</label>
+            <input
+              id="locality-input"
+              name="locality"
+              type="text"
+              placeholder="us-ny, us-ca, in-ka"
+              data-i18n-placeholder="ui.locality.placeholder"
+            />
           </div>
         </form>
         <p id="search-feedback" class="visually-hidden" role="status"></p>
+        <p id="advice-banner" class="advice-banner" data-i18n="ui.results.disclaimer">
+          Pricing reflects average retail fills; verify with your pharmacist for patient-specific costs.
+        </p>
       </section>
 
       <section id="results" class="results" aria-live="polite"></section>
+
+      <section id="pharmacy-section" class="pharmacy" aria-live="polite">
+        <header class="section-header">
+          <h2 data-i18n="ui.pharmacies.title">Nearby pharmacy and online offers</h2>
+          <p data-i18n="ui.pharmacies.subtitle">
+            Compare dispensing partners for the lowest available fill price in your area.
+          </p>
+        </header>
+        <div id="pharmacy-offers" class="pharmacy__grid"></div>
+      </section>
+
+      <section id="education-section" class="education">
+        <header class="section-header">
+          <h2 data-i18n="ui.education.title">Chronic condition learning hub</h2>
+          <p data-i18n="ui.education.subtitle">
+            Reviewed guidance tailored to diabetes, heart health, asthma, and more.
+          </p>
+        </header>
+        <div id="education-modules" class="module-grid"></div>
+        <div class="calculator">
+          <h3 data-i18n="ui.savings.title">Savings calculator</h3>
+          <p id="savings-hint" data-i18n="ui.savings.input_hint">
+            Use the search results or type any supported medicine.
+          </p>
+          <form id="savings-form" class="calculator__form">
+            <label for="savings-medicine" data-i18n="ui.savings.medicine_label">Medicine</label>
+            <input id="savings-medicine" name="medicine" type="text" />
+            <div class="calculator__row">
+              <div class="calculator__field">
+                <label for="savings-months" data-i18n="ui.savings.months_label">Months on therapy</label>
+                <input id="savings-months" name="months" type="number" min="1" value="12" />
+              </div>
+              <div class="calculator__field">
+                <label for="savings-quantity" data-i18n="ui.savings.quantity_label">Monthly fills (packs)</label>
+                <input id="savings-quantity" name="monthly_quantity" type="number" min="1" step="1" value="1" />
+              </div>
+            </div>
+            <button type="submit" data-i18n="ui.savings.submit">Estimate savings</button>
+          </form>
+          <div id="savings-output" class="calculator__output" aria-live="polite"></div>
+        </div>
+      </section>
     </main>
 
     <footer class="footer">
-      <p>
-        Data sourced from public drug registries and health organizations. Always consult your
-        healthcare provider before making medication changes.
+      <p data-i18n="ui.footer.disclaimer">
+        Data sourced from public drug registries and health organizations. Always consult your healthcare provider before making medication changes.
       </p>
     </footer>
 
