@@ -212,5 +212,119 @@
     "sources": [
       { "name": "NICE Medicines Information", "url": "https://bnf.nice.org.uk/" }
     ]
+  },
+  {
+    "brand_name": "Glucophage",
+    "generic_name": "Metformin",
+    "indications": ["Type 2 diabetes", "PCOS", "Insulin resistance"],
+    "form": "Extended-release tablet",
+    "strength": "500 mg",
+    "average_brand_price": 174.00,
+    "average_generic_price": 4.00,
+    "notes": "First-line diabetes medication. Generic versions are FDA-approved and bioequivalent. Significant cost savings available.",
+    "fda_orange_book_code": "AB",
+    "ndc_numbers": ["0088-1090-30", "0088-1090-47"],
+    "sources": [
+      { "name": "FDA Orange Book", "url": "https://www.accessdata.fda.gov/scripts/cder/ob/index.cfm" },
+      { "name": "American Diabetes Association", "url": "https://www.diabetes.org/" }
+    ]
+  },
+  {
+    "brand_name": "Norvasc",
+    "generic_name": "Amlodipine",
+    "indications": ["Hypertension", "Angina", "Coronary artery disease"],
+    "form": "Tablet",
+    "strength": "5 mg",
+    "average_brand_price": 152.00,
+    "average_generic_price": 9.00,
+    "notes": "Calcium channel blocker for blood pressure management. Generic amlodipine is widely available and cost-effective.",
+    "fda_orange_book_code": "AB",
+    "ndc_numbers": ["0069-1530-66", "0069-1540-68"],
+    "sources": [
+      { "name": "FDA Orange Book", "url": "https://www.accessdata.fda.gov/scripts/cder/ob/index.cfm" },
+      { "name": "American Heart Association", "url": "https://www.heart.org/" }
+    ]
+  },
+  {
+    "brand_name": "Zoloft",
+    "generic_name": "Sertraline",
+    "indications": ["Depression", "Anxiety disorders", "PTSD", "OCD"],
+    "form": "Tablet",
+    "strength": "50 mg",
+    "average_brand_price": 195.00,
+    "average_generic_price": 15.00,
+    "notes": "SSRI antidepressant. Generic sertraline provides identical therapeutic effects with substantial savings.",
+    "fda_orange_book_code": "AB",
+    "ndc_numbers": ["0049-4900-66", "0049-4910-66"],
+    "sources": [
+      { "name": "FDA Orange Book", "url": "https://www.accessdata.fda.gov/scripts/cder/ob/index.cfm" },
+      { "name": "National Institute of Mental Health", "url": "https://www.nimh.nih.gov/" }
+    ]
+  },
+  {
+    "brand_name": "Synthroid",
+    "generic_name": "Levothyroxine",
+    "indications": ["Hypothyroidism", "Thyroid hormone replacement"],
+    "form": "Tablet",
+    "strength": "100 mcg",
+    "average_brand_price": 89.00,
+    "average_generic_price": 12.00,
+    "notes": "Thyroid hormone replacement therapy. Generic levothyroxine is FDA-approved but some patients may need brand consistency.",
+    "fda_orange_book_code": "AB",
+    "ndc_numbers": ["0074-3762-90", "0074-7762-90"],
+    "special_considerations": "Some patients may require brand consistency due to narrow therapeutic index",
+    "sources": [
+      { "name": "FDA Orange Book", "url": "https://www.accessdata.fda.gov/scripts/cder/ob/index.cfm" },
+      { "name": "American Thyroid Association", "url": "https://www.thyroid.org/" }
+    ]
+  },
+  {
+    "brand_name": "Prilosec",
+    "generic_name": "Omeprazole",
+    "indications": ["GERD", "Peptic ulcers", "Acid reflux", "H. pylori treatment"],
+    "form": "Delayed-release capsule",
+    "strength": "20 mg",
+    "average_brand_price": 146.00,
+    "average_generic_price": 18.00,
+    "notes": "Proton pump inhibitor for acid reduction. Generic omeprazole offers identical acid suppression.",
+    "fda_orange_book_code": "AB",
+    "ndc_numbers": ["0186-0321-31", "0186-0322-31"],
+    "sources": [
+      { "name": "FDA Orange Book", "url": "https://www.accessdata.fda.gov/scripts/cder/ob/index.cfm" },
+      { "name": "American Gastroenterological Association", "url": "https://gastro.org/" }
+    ]
+  },
+  {
+    "brand_name": "Ambien",
+    "generic_name": "Zolpidem",
+    "indications": ["Insomnia", "Sleep disorders"],
+    "form": "Tablet",
+    "strength": "10 mg",
+    "average_brand_price": 267.00,
+    "average_generic_price": 28.00,
+    "notes": "Non-benzodiazepine sleep aid. Generic zolpidem provides identical sleep-inducing effects.",
+    "fda_orange_book_code": "AB",
+    "ndc_numbers": ["0024-5401-31", "0024-5421-31"],
+    "controlled_substance": "Schedule IV",
+    "sources": [
+      { "name": "FDA Orange Book", "url": "https://www.accessdata.fda.gov/scripts/cder/ob/index.cfm" },
+      { "name": "American Academy of Sleep Medicine", "url": "https://aasm.org/" }
+    ]
+  },
+  {
+    "brand_name": "Flomax",
+    "generic_name": "Tamsulosin",
+    "indications": ["Benign prostatic hyperplasia", "Urinary retention"],
+    "form": "Extended-release capsule",
+    "strength": "0.4 mg",
+    "average_brand_price": 183.00,
+    "average_generic_price": 22.00,
+    "notes": "Alpha-blocker for prostate enlargement. Generic tamsulosin provides equivalent symptom relief.",
+    "fda_orange_book_code": "AB",
+    "ndc_numbers": ["0597-0050-37", "0597-0051-37"],
+    "sources": [
+      { "name": "FDA Orange Book", "url": "https://www.accessdata.fda.gov/scripts/cder/ob/index.cfm" },
+      { "name": "American Urological Association", "url": "https://www.auanet.org/" }
+    ]
   }
 ]

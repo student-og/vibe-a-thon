@@ -51,14 +51,105 @@
               minlength="2"
               required
             />
+            <input
+              id="location-input"
+              name="location"
+              type="text"
+              placeholder="Enter ZIP code or city for nearby pharmacies"
+              title="Optional: Enter your location to find nearby pharmacies"
+            />
             <button type="submit">Find Alternatives</button>
+          </div>
+          <div class="advanced-options">
+            <label for="language-select">Language:</label>
+            <select id="language-select" name="language">
+              <option value="en">English</option>
+              <option value="es">Español</option>
+              <option value="fr">Français</option>
+              <option value="de">Deutsch</option>
+              <option value="zh">中文</option>
+            </select>
           </div>
         </form>
         <p id="search-feedback" class="visually-hidden" role="status"></p>
       </section>
 
+      <!-- Educational Section -->
+      <section class="education" aria-label="Healthcare Education">
+        <h2>Healthcare Education & Tools</h2>
+        <div class="education-grid">
+          <div class="education-card">
+            <h3>💊 Understanding Generic Medicines</h3>
+            <p>Learn about bioequivalence, FDA approval process, and why generics cost less while maintaining the same effectiveness.</p>
+            <button class="btn-secondary" onclick="showEducationalModule('generic-info')">Learn More</button>
+          </div>
+          <div class="education-card">
+            <h3>💰 Savings Calculator</h3>
+            <p>Calculate potential annual savings when switching to generic alternatives for chronic conditions.</p>
+            <button class="btn-secondary" onclick="showSavingsCalculator()">Calculate Savings</button>
+          </div>
+          <div class="education-card">
+            <h3>🏥 Chronic Care Management</h3>
+            <p>Resources for managing long-term conditions like diabetes, hypertension, and cholesterol.</p>
+            <button class="btn-secondary" onclick="showEducationalModule('chronic-care')">Explore Resources</button>
+          </div>
+        </div>
+      </section>
+
       <section id="results" class="results" aria-live="polite"></section>
     </main>
+
+    <!-- Educational Modals -->
+    <div id="educational-modal" class="modal" style="display: none;">
+      <div class="modal-content">
+        <span class="close" onclick="closeModal()">&times;</span>
+        <div id="modal-body"></div>
+      </div>
+    </div>
+
+    <!-- Savings Calculator Modal -->
+    <div id="savings-calculator-modal" class="modal" style="display: none;">
+      <div class="modal-content">
+        <span class="close" onclick="closeModal()">&times;</span>
+        <div id="calculator-body">
+          <h2>Annual Savings Calculator</h2>
+          <form id="savings-form">
+            <div class="form-group">
+              <label for="brand-price">Current Brand Price (per prescription):</label>
+              <input type="number" id="brand-price" step="0.01" min="0" required>
+            </div>
+            <div class="form-group">
+              <label for="generic-price">Generic Price (per prescription):</label>
+              <input type="number" id="generic-price" step="0.01" min="0" required>
+            </div>
+            <div class="form-group">
+              <label for="prescriptions-per-year">Prescriptions per Year:</label>
+              <input type="number" id="prescriptions-per-year" min="1" max="365" value="12" required>
+            </div>
+            <button type="button" onclick="calculateSavings()">Calculate Annual Savings</button>
+          </form>
+          <div id="savings-result" style="display: none;">
+            <h3>Your Potential Annual Savings</h3>
+            <div class="savings-display">
+              <div class="savings-amount">$<span id="annual-savings">0</span></div>
+              <div class="savings-details">
+                <p>Brand total: $<span id="brand-total">0</span>/year</p>
+                <p>Generic total: $<span id="generic-total">0</span>/year</p>
+                <p><strong>Remember:</strong> Always consult your healthcare provider before switching medications.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Healthcare Disclaimer -->
+    <div class="healthcare-disclaimer">
+      <div class="disclaimer-content">
+        <h3>⚠️ Important Healthcare Notice</h3>
+        <p><strong>Always consult your healthcare provider before changing medications.</strong> This tool is for informational purposes only and should not replace professional medical advice. Generic alternatives must be approved by your doctor.</p>
+      </div>
+    </div>
 
     <footer class="footer">
       <p>
