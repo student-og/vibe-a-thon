@@ -12,10 +12,23 @@ This project is a lightweight web experience that helps users discover cost-effe
 ## Getting Started
 
 ### 1. Set up the environment
-
+***for linux/unix
 ```bash
 python -m venv .venv
 source .venv/bin/activate
+pip install -r requirements.txt
+```
+***for windows
+In PowerShell, you should activate a Python virtual environment with:
+```bash
+python -m venv .venv
+. .venv\Scripts\Activate
+pip install -r requirements.txt
+```
+Or, if you're using Command Prompt (cmd.exe):
+```bash
+python -m venv .venv
+.venv\Scripts\activate.bat
 pip install -r requirements.txt
 ```
 
